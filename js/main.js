@@ -23,7 +23,7 @@ const btn = document.getElementById("btn");
 
 let getPokeData =()  =>{
     
-    let id = Math.floor(Math.random() * 150) +1;
+    let id = Math.floor(Math.random() * 500) +1;
     const finalUrl = url + id;
 
 
@@ -84,8 +84,7 @@ let appendTypes = (types)=>{
     types.forEach(item => {
         let span = document.createElement("SPAN");
         span.textContent = item.type.name;
-        document.querySelector(".types").appendChild(span);
-        
+        document.querySelector(".types").appendChild(span);      
     });
 }
 
